@@ -16,6 +16,17 @@ public:
             cout << "Invalid deposit amount!" << endl;
         }
     }
+
+    void withdraw(double amount) {
+        if (amount <= 0) {
+            cout << "Invalid withdrawal amount!" << endl;
+        } else if (amount > balance) {
+            cout << "Insufficient balance!" << endl;
+        } else {
+            balance -= amount;
+            cout << "Withdrawn: " << amount << endl;
+        }
+    }
 };
 
 int main() {
@@ -24,7 +35,8 @@ int main() {
     account1.name = "Satyam Kumar";
 
     account1.deposit(1000);
-    account1.deposit(-500); // Invalid deposit
+    account1.withdraw(300);
+    account1.withdraw(800); // Insufficient balance
 
     return 0;
 }
