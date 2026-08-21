@@ -40,3 +40,6 @@ int main() {
 
     return 0;
 }
+
+
+// A constructor is a special function in a class that is automatically called when an object is created.
