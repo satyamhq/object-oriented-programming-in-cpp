@@ -1,5 +1,8 @@
-class rectanle_area {
-    public:
+#include <iostream>
+using namespace std;
+
+class rectangle_area {
+public:
     int length;
     int breadth;
 
@@ -9,9 +12,12 @@ class rectanle_area {
 };
 
 int main() {
-    rectanle_area rectangle1;
+    rectangle_area rectangle1;
+
     rectangle1.length = 5;
     rectangle1.breadth = 10;
+
     cout << "Area of rectangle: " << rectangle1.area() << endl;
+
     return 0;
 }
