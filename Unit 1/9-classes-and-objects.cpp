@@ -19,8 +19,8 @@ class studnet {
 
 int main() {
     studnet student1;
-    student1.name = "John Doe";
-    student1.age = 20;
+    student1.name = "Satyam Kumar";
+    student1.age = 18;
     student1.gender = "Male";
     student1.displayInfo();
     return 0;
