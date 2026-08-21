@@ -1,3 +1,6 @@
+// Class = Blueprint
+// Object = Real instance created from the blueprint
+
 #include<iostream>
 using namespace std;
 
