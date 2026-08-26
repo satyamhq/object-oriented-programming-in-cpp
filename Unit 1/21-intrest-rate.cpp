@@ -1,14 +1,18 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class Bank{
-    public:
-    static double interestRate; // static member variable to hold the interest rate
-    static void displayRate(){
-        cout << "Intrest rate of the bank:" << interestRate << "%";
+
+class Bank {
+public:
+    static double interestRate;
+
+    static void displayRate() {
+        cout << "Interest rate of the bank: " << interestRate << "%";
     }
-}
+};  // semicolon required here
 
 double Bank::interestRate = 7.5;
-int main(){
+
+int main() {
     Bank::displayRate();
+    return 0;
 }
